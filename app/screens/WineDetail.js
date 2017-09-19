@@ -6,6 +6,10 @@ import {
 } from 'react-native';
 import makeName from './utils/makeName'
 
+// Components
+import AddTaste from './components/AddTaste'
+import TasteList from './components/TasteList'
+
 export default class WineDetail extends Component {
     constructor(props) {
         super(props)
@@ -50,15 +54,29 @@ export default class WineDetail extends Component {
       
       return (
         <View style={styles.container}>
-          <Text>
+          <Text
+            style={styles.h1}
+          >
             {this.state.name} ({this.state.year})
           </Text>
-          <Text>
-            {this.state.winery}
+          <Text
+            style={styles.p}
+          >
+            Winery: {this.state.winery}
           </Text>
-          <Text>
-            {this.state.origin}
+          <Text
+            style={styles.p}
+          >
+            Origin: {this.state.origin}
           </Text>
+          <AddTaste
+            name={this.state.name}
+            year={this.state.year}
+          />
+          <TasteList
+            name={this.state.name}
+            year={this.state.year}
+          />
         </View>
       );
     }
@@ -70,7 +88,16 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'flex-start',
+        paddingTop: 20
+    },
+    h1: {
+        fontSize: 30,
+        color: '#b3003b'
+    },
+    p: {
+        fontSize: 20,
+        color: '#000'
     }
 });
   
