@@ -5,7 +5,7 @@ import GunSQLite from 'gun-react-native-sqlite'
 
 
 const adapter = GunSQLite.bootstrap(Gun)
-const gun = new Gun('http://192.168.0.22:9005/gun')
+const gun = new Gun()
 
 // Add to React Component prototype for global availability
 Component.prototype.$gun = gun

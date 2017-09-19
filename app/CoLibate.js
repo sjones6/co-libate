@@ -6,6 +6,8 @@ import gun from './GunLoader';
 // Screens
 import HomeScreen from './screens/HomeScreen'
 import WineList from './screens/WineList'
+import AddNew from './screens/AddNew'
+import WineDetail from './screens/WineDetail'
 
 // Register Navigation
 const CoLibate = StackNavigator({
@@ -14,6 +16,12 @@ const CoLibate = StackNavigator({
     },
     WineList: {
         screen: WineList
+    },
+    AddNew: {
+        screen: AddNew
+    },
+    WineDetail: {
+        screen: WineDetail
     }
 })
 

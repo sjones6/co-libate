@@ -11,6 +11,7 @@
 		"gun-react-native-sqlite": "^0.0.1",
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.48.3",
+		"react-native-button": "^2.1.0",
 		"react-native-sqlite-storage": "^3.3.3",
 		"react-navigation": "^1.0.0-beta.11"
 	},

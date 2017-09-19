@@ -23,7 +23,7 @@ export default class WineList extends Component {
         <TextInput
             style={styles.input}
             //onKeyPress={(a, b, c) => console.log({a, b, c})}
-            onChangeText={this.textChanged}
+            onChangeText={text => this.textChanged(text)}
             placeholder="Search wines ..."
         />
       );
@@ -41,5 +41,5 @@ const styles = StyleSheet.create({
       borderColor: '#b3003b',
       width: 300
     }
-  });
+});
   
